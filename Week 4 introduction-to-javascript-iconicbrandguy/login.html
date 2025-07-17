@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <meta name="author" content="Elisha">
+    
+        <style>
+
+            body{
+                background-color: #e7e7e7;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                margin: 0px;
+            }
+
+            label.block, .block, select, span{
+                display:block;
+            }
+
+            #myForm{
+                margin:auto;
+                width:30%;
+                background-color: #232b30;
+                color:#ffffff;
+                padding-top: 20px;
+                
+            }
+
+            .myForm{
+                margin-left: 35px;
+
+            }
+
+            #myForm input.block, #myForm select, input.mybutton{
+                width:80%;
+                height:30px;
+                }
+
+            .mybutton{
+                background-color: #ac0808;
+                border:none;
+                color:#ffffff;
+                height: 30px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            /* .header{color: #d80d0d;
+            color: #61bffa;} */
+
+            .error{
+                color:red;
+                font-size:12px;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <div id="myForm">
+            <div class="myForm">
+                <h2 class="header">Login</h2>
+        
+                <form id="registrationForm" onsubmit="return loginValidation()">
+
+                    <label for="email" >Email</label>
+                    <input type="email" id="email" name="email" class="block">
+                    <span id="emailError" class="error"></span>
+        
+                    <label for="password" class="block">Password</label>
+                    <input type="password" id="password" name="password" class="block">
+                    <span id="passwordError" class="error"></span>
+        
+                    <input type="submit" value="Login" class="mybutton">
+                </form>
+        
+            </div>
+        </div>
+        
+
+    
+        <script src="myscript.js"></script>
+    </body>
+</html>

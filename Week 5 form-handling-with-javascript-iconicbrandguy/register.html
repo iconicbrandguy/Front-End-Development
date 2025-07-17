@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Form Validation and Data Capture</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <meta name="author" content="Elisha">
+    
+        <style>
+            *{box-sizing: border-box;}
+            body{
+                background-color: #bbd1df;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: ;
+                width: 100%;
+                margin: 0px;
+            }
+
+            input#email, input#password, input#submit, select, span, .block{
+                display:block;
+            }
+
+            #regForm{
+                margin:auto;
+                width:30%;
+                background-color:;
+                color:#111a20;
+                padding-top: px;
+            }
+            
+            .header{
+                margin-left: 500px;
+                color:#203c4e;
+            }
+
+            .regForm{
+                margin-left: 35px;
+            }
+
+            input#email, input#password, input#submit, input#age, input#confirmPassword, select{
+                width:80%;
+                height:30px;
+                margin-top: 0px;
+            }
+
+            input{
+                /* border-top: none; */
+                border-radius: 4px;
+                border-color:#111a20;
+            }
+
+            .mybutton{
+                background-color:#2f556d;
+                border:;
+                border-radius: 20px;
+                color:#ffffff;
+                height: 30px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            .mybutton:hover{
+                background-color: #5091b9;
+            }
+
+            .error{
+                color:red;
+                font-size:12px;
+            }
+
+            .summary {
+                background-color: #fff;
+                padding: 20px;
+                margin-top: 20px;
+                border: 1px solid #ccc;
+                display: none;
+                width: 30%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            
+            /* Media query for screens smaller than 768px (tablets, small phones) */
+            @media only screen and (max-width: 768px) {
+                #regForm, .summary {
+                width: 80%; /* Expand the width on smaller screens to occupy more space */
+                }
+
+                .header {
+                margin-left: 0; /* Center the header on smaller screens */
+                text-align: center;
+                }
+            }
+
+            /* Media query for screens smaller than 480px (mobile phones) */
+            @media only screen and (max-width: 480px) {
+                #regForm, .summary {
+                width: 95%; /* Almost full width on very small screens */
+                }
+
+                .header {
+                font-size: 18px; /* Slightly reduce the header font size for better visibility on small screens */
+                text-align: center;
+                }
+
+                input#email, input#password, input#submit, input#age, input#confirmPassword, select {
+                width: 90%; /* Increase the width of input fields for better usability */
+                }
+
+                .mybutton {
+                width: 90%; /* Button width adjusted */
+                }
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <div id="myForm">
+            <div class="regForm">
+                <h2 class="header">Registration Form</h2>
+        
+                <form id="regForm">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+        
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span id="confirmPasswordError" class="error"></span>
+
+                    <label for="age">Age</label>  <br>
+                    <input type="number" id="age" name="age" min="1">
+                    <span id="ageError" class="error"></span>
+
+                    <label for="gender">Gender:</label> <br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="gender" >Male</label> <br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="gender">Female</label>
+                    <span id="genderError" class="error"></span>
+
+                    <label for="country">Country</label>
+                    <select id="country" name="role">
+                        <option value="">Select...</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <span id="countryError" class="error"></span>
+                    <br>
+                    <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the Terms and Conditions.</label>
+                    <span id="termsError" class="error"></span>
+                    </div> <br>
+        
+                    <input type="submit" value="Register" id="submit" class="mybutton">
+                </form>
+        
+            </div>
+        </div>
+
+        <!-- Form Summary Section -->
+        <div class="summary" id="formSummary">
+            <h3>Form Summary</h3>
+            <p id="summaryContent"></p>
+        </div>
+
+        <script src="register.js"></script>
+    </body>
+</html>

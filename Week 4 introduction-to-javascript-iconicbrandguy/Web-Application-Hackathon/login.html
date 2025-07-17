@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <meta name="author" content="Elisha">
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link rel="stylesheet" type="text/css" href="health.css">
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+
+                <div id="branding">
+                    <h1> <span class="highlight"> A I M H</span> </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="sign.html" style="border-bottom: 2px solid red;">Sign up/Log in</a> </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+
+        <div id="myForm">
+            <div class="myForm">
+                <h2 class="header">Login</h2>
+        
+                <form id="registrationForm" onsubmit="return detailsValidation()">
+
+                    <label for="email" >Email</label> <br>
+                    <input type="email" id="email" name="email" class="block"> <br>
+        
+                    <label for="password" class="block">Password</label> <br>
+                    <input type="password" id="password" name="password" class="block"> <br>
+                    
+                <input type="submit" value="Submit" class="mybutton">
+                </form>
+                
+                <p style="padding-bottom: 10px;" id="idForm" class=""> <a href="sign.html"> Sign up if you don't have an account yet.</a> </p>
+            </div>
+        </div>
+        
+
+        <script src="formscript.js"></script>
+    </body>
+</html>

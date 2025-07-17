@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Week2: CSS Layout</title>
+        <meta charset="UTF-8">
+        <meta name="authour" content="Elisha">
+        <meta name="keywords" content="styling webpage">
+        <meta name="description" content="Affordable and professional web design">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="health.css">
+    
+        <style>
+
+            body{
+                /* background-color: #e7e7e7; */
+                background:url('./img/group.jpg') 0 -50px;
+                background-attachment: fixed;
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                margin: 0px;
+            }
+
+            label.block, .block, select, span{
+                display:block;
+            }
+
+            #myForm{
+                margin:auto;
+                width:30%;
+                background-color: #110c52;
+                color:#ffffff;
+                padding-top: 20px;
+                
+            }
+
+            .myForm{
+                margin-left: 35px;
+            }
+
+            #myForm input.block, #myForm select, .mybutton{
+                width:80%;
+                height:30px;
+                }
+
+            .mybutton, .mybutton a{
+                background-color: #ac0808;
+                border:none;
+                color:#ffffff;
+                height: 30px;
+                margin-top: 5px;
+                margin-bottom: px;
+                text-decoration: none;
+            }
+
+            /* .header{color: #d80d0d;
+            color: #61bffa;} */
+
+            .error{
+                color:red;
+                font-size:12px;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+
+                <div id="branding">
+                    <h1> <span class="highlight"> A I M H</span> </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="sign.html" style="border-bottom: 2px solid red;">Sign up/Log in</a> </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+
+        <br>
+        <div id="myForm">
+            <div class="myForm">
+                <h2 class="header">Register</h2>
+        
+                <form id="registrationForm" onsubmit="return formValidation()">
+        
+                    <label for="name" >Full name</label>
+                    <input type="text" id="name" name="name" class="block">
+                    <span id="nameError" class="error"></span>
+        
+                    <label for="email" >Email</label>
+                    <input type="email" id="email" name="email" class="block">
+                    <span id="emailError" class="error"></span>
+        
+                    <label for="tel">Phone number</label>
+                    <input type="tel" id="tel" name="telephone" class="block">
+                    <span id="telError" class="error"></span>
+        
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" class="block">
+                    <span id="ageError" class="error"></span>
+                    
+
+                    <div class="block">
+                    <input type="radio" id="male" value="male" name="gender" >
+                    <label for="gender">Male</label>
+                    <input type="radio" id="female" value="female" name="gender" >
+                    <label for="gender">Female</label>
+                    </div>
+        
+                    <label for="password" class="block">Password</label>
+                    <input type="password" id="password" name="password" class="block">
+                    <span id="passwordError" class="error"></span>
+        
+                    <!-- <label for="c-password">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span id="confirmPasswordError" class="error"></span> -->
+        
+                    
+                    <div class="block">
+                    <label for="country">Country</label>
+                    <select id="country" id="country" class="block">
+                        <option>South Africa</option>
+                        <option>Nigeria</option>
+                        <option>Ghana</option>
+                        <option>Kenya</option>
+                        <option>Tanzania</option>
+                    </select>
+                    </div>
+                    <button type="submit" value="Register" class="mybutton"> <a href="home.html">Register</a></button>
+                    <!-- <input type="submit" value="Register" class="mybutton" a href="health.html"></a></input> -->
+
+                    
+                </form>
+                <p style="padding-bottom: 10px;" id="idForm" class=""> <a href="login.html"> Login if already have an account</a> </p>
+            </div>
+        </div>
+
+        
+        
+
+    
+        <script src="myscript.js"></script>
+    </body>
+</html>

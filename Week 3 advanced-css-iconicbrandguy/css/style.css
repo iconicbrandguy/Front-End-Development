@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: px;
+}
+
+.r-box {
+    background-color: lightcoral;
+    color: white;
+    padding: 40px;
+    margin: 10px;
+    flex: 1 1 30%; 
+    text-align: center;
+    min-width: 200px;
+} 
+
+
+
+/* media queries for responsiveness */
+
+/* large screens > 768px */
+@media (min-width: 768px){
+    .r-box {
+        flex: 1 1 30%; /* display 3 boxes per row */
+    }
+}
+
+/* small screens < 768px */
+@media (max-width: 768px){
+    .r-box {
+        flex: 1 1 45%; /* display 2 boxes per row */
+    }
+}
+
+/* smaller screens < 480px */
+@media (max-width: 480px){
+    .r-box {
+        flex: 1 1 100%; /* display 1 box per row */
+    }
+}
+
+
+
+
+
+p {
+    display: inline;
+}
+
+a {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* distributes the space between items */
+    align-items: center; /* aligns items vertically in the center */
+    height: 300px;
+    background-color: lightgray;
+}
+
+.box {
+    background-color: steelblue; 
+    color: white;
+    padding: 20px; /* space inside element, between content and element border */
+    text-align: center;
+    flex: 1; /*  */
+    margin: 0 10px; /* space outside element, betweeen other surrounding element and element border */
+} 

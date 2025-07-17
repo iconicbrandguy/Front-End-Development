@@ -1,0 +1,133 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: ;
+    padding:0px;
+    margin:0px;
+}
+
+/* Global */
+.mycontainer{
+    margin:auto;
+    width:80%;
+}
+
+header .highlight{
+    color:#a10808;
+    font-weight: bold;
+}
+
+.mybutton{
+    background-color: #ac0808;
+    border:none;
+    color:#ffffff;
+    height:30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* header */
+header{
+    min-height:80px;
+    background: #232b30;
+    color:#ffffff;
+    border-bottom:2px #ac0808 solid;
+    margin-bottom: 0;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+
+header li{
+    float:left;
+    display: inline;
+    padding:0 20px 0 20px;
+}
+nav{
+    float:right;
+    margin-top: 30px;
+}
+
+#branding{
+    float:left;
+}
+
+#myheader{
+    min-height:200px;
+    background:url('bg1.jpg') ;
+    text-align: center;
+    color:#ffffff;
+    padding-top: 1px;
+}
+
+#myheader h1{
+    padding-top: 2px;
+    margin-bottom: 15px;
+    font-size:45px;
+}
+
+header a:hover{
+    color:#cccccc;
+}
+
+#arti ul{list-style-type:none;}
+
+#arti li{
+    background-color: #e4e4e4;
+    padding:10px;
+    margin:10px;
+}
+
+section#services{
+    width:65%;
+    float:left;
+}
+
+section#myform{
+    width:35%;
+    float:right;
+    background-color: #232b30;
+    color:#ffffff;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+section#myform .sidebar input, section#myform .sidebar select, section#myform .sidebar button{
+    width:90%;
+    padding:px;
+    height:40px;
+}
+
+section#mytable th, td{
+    background-color: #e4e4e4;
+    padding: 10px;
+    margin: 10px;
+}
+
+section#mytable th, td{
+    text-align: left;
+}
+
+
+
+footer{
+    background-color: #ac0808;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Form Validation and Data Capture</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <meta name="author" content="Elisha">
+    
+        <style>
+            *{box-sizing: border-box;}
+            body{
+                background-color: #e7e7e7;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                margin: 0px;
+            }
+
+            input#email, input#password, input#submit, select, span{
+                display:block;
+            }
+
+            #myForm{
+                margin:auto;
+                width:30%;
+                background-color: #232b30;
+                color:#ffffff;
+                padding-top: 20px;
+            }
+
+            .regForm{
+                margin-left: 35px;
+            }
+
+            label, input#email, input#password, input#submit, select{
+                width:80%;
+                height:30px;
+            }
+
+            .mybutton{
+                background-color: #ac0808;
+                border:none;
+                border-radius: 20px;
+                color:#ffffff;
+                height: 30px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            .error{
+                color:red;
+                font-size:12px;
+            }
+
+            .summary {
+                background-color: #fff;
+                padding: 20px;
+                margin-top: 20px;
+                border: 1px solid #ccc;
+                display: none;
+                width: 30%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <div id="myForm">
+            <div class="regForm">
+                <h2 class="header">Login</h2>
+        
+                <form id="regForm">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+        
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+
+                    <label for="role">Role</label>
+                    <select id="role" name="role">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <span id="roleError" class="error"></span>
+
+                    <label for="subscribe"> Subscribe to newsletter</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <span id="termsError" class="error"></span>
+                        
+        
+                    <input type="submit" id="submit" value="Login" class="mybutton">
+                </form>
+        
+            </div>
+        </div>
+
+        <!-- Form Summary Section -->
+        <div class="summary" id="formSummary">
+            <h3>Form Summary</h3>
+            <p id="summaryContent"></p>
+        </div>
+
+        <script src="gts.js"></script>
+    </body>
+</html>
